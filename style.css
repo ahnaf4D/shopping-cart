@@ -1,56 +1,102 @@
-body{
-	background: #fff;
+.button-14 {
+    background-image: linear-gradient(#f7f8fa, #e7e9ec);
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .6) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    font-size: 14px;
+    height: 29px;
+    font-size: 13px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 11px;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
 }
-.cart{
-	margin: 100px 0;
-	background-color: #F6F5FA;;
-	padding: 60px 0;
+
+.button-14:active {
+    border-bottom-color: #a2a6ac;
 }
-.total-price{
-	padding-bottom: 15px;
+
+.button-14:active:hover {
+    border-bottom-color: #a2a6ac;
 }
-.cart-item{
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 15px 20px;
-	margin-bottom: 20px;
+
+.button-14:hover {
+    border-color: #a2a6ac #979aa1 #82858a;
 }
-.center-item{
+
+.button-14:focus {
+    border-color: #e77600;
+    box-shadow: rgba(228, 121, 17, .5) 0 0 3px 2px;
+    outline: 0;
+}
+
+.input-styles {
+    height: 20px;
+    width: 40px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.card-container {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    gap: 10px;
+    justify-content: center;
+    /* flex-direction: column; */
 }
-.cart-item img{
-	width: 115px;
+
+.button-37 {
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
-.cart-item h5{
-    padding: 0 45px;
+
+.button-37:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
 }
-.cart-item .remove-item{
-	width: 25px!important;
+
+@media (min-width: 768px) {
+    .button-37 {
+        padding: 10px 30px;
+    }
 }
-.btn-default{
-	background-color: #fff;
-}
-.cart-item .form-control{
-	background-color: #F6F5FA;
-	border: none;
-    width: 65px;
-    border-radius: 10px!important;
-    font-weight: 700;
-    font-size: 20px;
-}
-.input-group{
-	width: unset;
-	flex-wrap: nowrap;
-}
-.status{
-	text-align: right;
-}
-.check-out{
-    float: right;
-    padding: 10px 30px;
-	font-size: 19px;
-	background-color: #2FBE70;
-	border: none;
+
+@media (max-width : 600px) {
+    .card-container {
+        flex-direction: column;
+    }
 }
